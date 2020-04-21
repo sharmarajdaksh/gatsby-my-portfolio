@@ -1,0 +1,33 @@
+.landing {
+    height: calc(100vh - 2.86rem - 32px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    .landing__svg {
+        width: 60%;
+        display: block;
+        margin:1.5rem auto;
+        // margin-top: -100px;
+    }
+
+    .landing__content {
+        width: 100%;
+        text-align: right;
+        line-height: 1.5;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: left;
+            line-height: 1.2;
+            span {
+                font-weight: 900;
+            }
+        }
+
+    }
+}

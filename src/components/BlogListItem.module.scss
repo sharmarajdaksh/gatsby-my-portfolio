@@ -1,0 +1,31 @@
+.bloglistitem {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    color: #333;
+
+    * a,
+    * a:visited,
+    * a:hover,
+    * a:active {
+        text-decoration: none;
+        color: inherited;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    p.date {
+        color: #888;
+        font-size: 0.75rem;
+    }
+
+    p.subtitle {
+        color: #555;
+        font-size: 1rem;
+    }
+
+    border-bottom: 1px #eee solid;
+}
