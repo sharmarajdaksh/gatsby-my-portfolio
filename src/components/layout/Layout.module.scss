@@ -1,8 +1,14 @@
 .layout {
-    padding: 1rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    animation: fadein 0.5s;
+    -webkit-animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

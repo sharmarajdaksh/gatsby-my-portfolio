@@ -37,6 +37,8 @@ const BlogPost = props => {
                 ></div>
                 <div className={blogPostStyles.article__divider}></div>
             </article>
+            <br/>
+            <br/>
         </Layout>
     )
 }

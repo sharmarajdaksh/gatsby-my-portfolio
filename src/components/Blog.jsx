@@ -28,6 +28,7 @@ const Blog = () => {
                             subtitle
                             date
                             author
+                            index
                         }
                         timeToRead
                         fields {
@@ -44,11 +45,15 @@ const Blog = () => {
             <Head title="Blog" />
             <ul>
                 {q.allMarkdownRemark.edges
-                    .sort((a, b) => parseFloat(b.node.frontmatter.index) - parseFloat(a.node.frontmatter.index))
+                    .sort(
+                        (a, b) =>
+                            parseFloat(a.node.frontmatter.index) -
+                            parseFloat(b.node.frontmatter.index)
+                    )
                     .map(edge => (
                         <Link
                             to={"/blog/" + edge.node.fields.slug}
-                            key={edge.node.frontmatter.date}
+                            key={edge.node.frontmatter.index}
                         >
                             <li>
                                 <BlogListItem
@@ -59,6 +64,9 @@ const Blog = () => {
                         </Link>
                     ))}
             </ul>
+            {q.allMarkdownRemark.edges.length > 5 ? (
+                <div style={{ height: "5rem" }}></div>
+            ) : null}
         </Layout>
     )
 }
