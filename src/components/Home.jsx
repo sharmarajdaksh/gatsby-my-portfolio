@@ -317,7 +317,7 @@ const BackendSection = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        NuxtJS
+                        Nuxt.JS
                     </a>
                 </strong>{" "}
                 with Vue.
