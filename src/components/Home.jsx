@@ -4,16 +4,21 @@ import Head from "../shared/Head"
 import homeStyles from "./Home.module.scss"
 import developerOnDeskSVG from "../assets/svg/coder_on_desk.svg"
 import frontendSVG from "../assets/svg/frontend_development.svg"
+import backendSVG from "../assets/svg/backend_development.svg"
 import reactSVG from "../assets/svg/react.svg"
 import angularSVG from "../assets/svg/angular.svg"
 import vueSVG from "../assets/svg/vue.svg"
+import djangoSVG from "../assets/svg/django.svg"
+import goSVG from "../assets/svg/go.svg"
+import nodeSVG from "../assets/svg/nodejs.svg"
 import resumePDF from "../assets/pdf/webdev-resume.pdf"
 import Layout from "./layout/Layout"
 
 export default () => {
     const secRef = useRef(null)
 
-    const scrollDown = () => {
+    const scrollDown = e => {
+        e.preventDefault()
         secRef.current.scrollIntoView({
             behavior: "smooth",
             block: "start",
@@ -45,21 +50,29 @@ export default () => {
                         to, read by blog. <br />
                     </p>
                     <br />
-                    <button onClick={scrollDown} className={homeStyles.button}>
-                        Learn More
-                    </button>
-                    <a
-                        className={[
-                            homeStyles.landing__content__resumebutton,
-                            homeStyles.button,
-                        ].join(" ")}
-                        href={resumePDF}
-                    >
-                        My Resume
-                    </a>
+                    <div>
+                        <a
+                            href={secRef}
+                            onClick={scrollDown}
+                            className={homeStyles.button}
+                        >
+                            Learn More
+                        </a>
+                        <a
+                            href={resumePDF}
+                            className={[
+                                homeStyles.landing__content__resumebutton,
+                                homeStyles.button,
+                            ].join(" ")}
+                            download="Dakshraj Sharma"
+                        >
+                            My Resume
+                        </a>
+                    </div>
                 </div>
             </section>
             <FrontendSection secref={secRef} />
+            <BackendSection />
         </Layout>
     )
 }
@@ -186,74 +199,79 @@ const FrontendSection = ({ secref }) => {
     )
 }
 
-const BackendSection = ({ secref }) => {
+const BackendSection = () => {
     return (
-        <section ref={secref} className={homeStyles.frontend}>
-            <h3>Frontend Development</h3>
+        <section
+            className={[homeStyles.frontend, homeStyles.backend].join(" ")}
+        >
+            <h3>Backend Development</h3>
             <div className={homeStyles.hr}></div>
 
             <p>
-                Skilled in HTML/CSS/JS, the basic building blocks of the
-                internet's pretty frontend, I use my skills to provider
-                interactive, user-friendly interfaces.
+                Limiting myself to the frontend could not ever have been enough
+                for me and no I had to venture into the darker end of the web,
+                the <strong>back end</strong>. I am well familiar with
+                traditional HTML-serving web server development, REST API
+                development, and architecture patterns like MVC.
             </p>
             <div>
                 <img
-                    src={frontendSVG}
+                    src={backendSVG}
                     className={homeStyles.landing__svg}
-                    alt="Frontend Development"
+                    alt="Backend Development"
                 />
             </div>
             <p>
-                Javascript is the godfather of the web, and I love Javascript.
-                Over the last years I have taught myself{" "}
+                I have worked with API and server side development with{" "}
                 <strong>
                     <a
-                        href="https://reactjs.org/"
+                        href="https://nodejs.org/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        React
-                    </a>
+                        NodeJS
+                    </a>{" "}
                 </strong>
-                ,{" "}
+                as well as{" "}
                 <strong>
                     <a
-                        href="https://angular.io/"
+                        href="https://www.djangoproject.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Angular
+                        Django
                     </a>
                 </strong>
-                , and{" "}
+                . Some time back, I learnt about modern, large-scale
+                architectures and how microservices architectures are changing
+                the game in modern web development, and of course that led me to
+                dirty my hands with{" "}
                 <strong>
                     <a
-                        href="https://vuejs.org/"
+                        href="https://golang.org/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Vue
+                        Go
                     </a>
-                </strong>
-                , the big boys in the frontend development scene.
+                </strong>.
             </p>
             <div className={homeStyles.skillSVGs}>
                 <div className={homeStyles.row}>
                     <img
-                        src={reactSVG}
+                        src={nodeSVG}
                         className={homeStyles.tech__svg}
-                        alt="React"
+                        alt="NodeJS"
                     />
                     <img
-                        src={angularSVG}
+                        src={goSVG}
                         className={homeStyles.tech__svg}
-                        alt="Angular"
+                        alt="Go"
                     />
                     <img
-                        src={vueSVG}
+                        src={djangoSVG}
                         className={homeStyles.tech__svg}
-                        alt="Vue"
+                        alt="Django"
                     />
                 </div>
             </div>
