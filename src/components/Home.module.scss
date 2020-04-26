@@ -166,3 +166,12 @@
         }
     }
 }
+
+@media(min-width: 767px) {
+    .landing {
+        padding: 1rem 15%;
+    }
+    .frontend {
+        padding: 2rem 15%;
+    }
+}

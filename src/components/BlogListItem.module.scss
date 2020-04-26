@@ -25,7 +25,7 @@
 
     p.date {
         color: #888;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
     p.subtitle {
@@ -34,4 +34,10 @@
     }
 
     border-bottom: 1px #eee solid;
+}
+
+@media(min-width: 767px) {
+    .bloglist {
+        padding: 1rem 15%;
+    }
 }

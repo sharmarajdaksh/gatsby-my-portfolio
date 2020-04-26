@@ -4,7 +4,7 @@
 
     .article__frontmatter {
         p {
-            font-size: 0.75rem;
+            font-size: 0.9rem;
             color: #888;
         }
 
@@ -23,7 +23,7 @@
 
     .article__content {
         text-align: justify;
-        color: #333;
+        color: #111;
         font-weight: 300;
 
         line-height: 1.25;
@@ -93,3 +93,8 @@
     }
 }
 
+@media(min-width: 767px) {
+    .article {
+        padding: 0 15%;
+    }
+}

@@ -116,8 +116,8 @@ const FrontendSection = ({ secref }) => {
 
             <p>
                 Skilled in HTML/CSS/JS, the basic building blocks of the
-                internet's pretty frontend, I use my skills to provider
-                interactive, user-friendly interfaces.
+                internet's pretty frontend, I use my skills to provide
+                interactive, user-friendly experiences.
             </p>
             <div>
                 <img
@@ -221,7 +221,7 @@ const FrontendSection = ({ secref }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        NuxtJS
+                        Nuxt.JS
                     </a>
                 </strong>{" "}
                 with Vue.
@@ -239,11 +239,11 @@ const BackendSection = () => {
             <div className={homeStyles.hr}></div>
 
             <p>
-                Limiting myself to the frontend could not ever have been enough
-                for me and no I had to venture into the darker end of the web,
-                the <strong>back end</strong>. I am well familiar with
-                traditional HTML-serving web server development, REST API
-                development, and architecture patterns like MVC.
+                Limiting myself to the frontend could never have been enough for
+                me and no I had to venture into the darker end of the web, the{" "}
+                <strong>back end</strong>. I am well familiar with traditional
+                HTML-serving web server development, REST API development, and
+                architecture patterns like MVC.
             </p>
             <div>
                 <img
@@ -286,9 +286,9 @@ const BackendSection = () => {
                         Go
                     </a>
                 </strong>
-                . Of course working with databases is essential in backend
-                development. I have a decent hold on the concepts of SQL and
-                NoSQL databases, having worked with{" "}
+                . Working with databases is essential in backend development. I
+                have a decent hold on the concepts of SQL and NoSQL databases,
+                having worked with{" "}
                 <strong>
                     {" "}
                     <a
@@ -344,10 +344,11 @@ const BackendSection = () => {
                 </div>
             </div>
             <p>
-                These days I have been hooked on the microservices and how large
-                companies like Netflix and Spotify are changing the way backends
-                are creaated with extreme scalability and availability. Learning
-                of about these also led me to learn about new technologies like{" "}
+                These days I have been hooked on learning microservices
+                architectures and how large companies like Netflix and Spotify
+                are changing the way backends are creaated with extreme
+                scalability and availability. Diving into this rabbit hole also
+                led me to learn about new technologies like{" "}
                 <strong>
                     {" "}
                     <a
@@ -407,8 +408,9 @@ const DevOpsSection = () => {
                         Git
                     </a>
                 </strong>
+                {", "}
                 intermediate system and database administration, as well as
-                setting up complete working servers on{" "}
+                setting up working web servers on{" "}
                 <strong>
                     {" "}
                     <a
@@ -551,13 +553,11 @@ const DevOpsSection = () => {
                 </div>
             </div>
             <p>
-                You won't be lying to say that I have barely scraped the surface
-                as far as DevOps goes, and I can't say you're wrong. But I
-                believe I have gained a firm grasp over concepts which
-                developers tend to often be completely unaware of and have now a
-                firm foundation in the field to build upon. At least, I know
-                enough to be able to launch a fullstack application completely
-                by myself. Among other things I want to try out{" "}
+                You won't be wrong to say that I have barely scraped the surface
+                as far as DevOps goes, but I believe I have gained a firm grasp
+                over concepts which developers tend to often be completely
+                unaware of and have now a firm foundation in the field to build
+                upon. Among other things I want to try out is{" "}
                 <strong>
                     {" "}
                     <a
@@ -569,7 +569,7 @@ const DevOpsSection = () => {
                     </a>
                 </strong>
                 {", "}
-                which I haven't been able to try out yet. Also I want to achieve
+                which I haven't been able to try out yet. Also I want to acquire
                 basic working knowledge of the{" "}
                 <strong>
                     {" "}
@@ -596,10 +596,10 @@ const OtherThingsSection = () => {
             <div className={homeStyles.hr}></div>
 
             <p>
-                I understand that web development isn't everything there is in
-                Software Development today, and so I've also tried to learn new
-                things on the side. I never got the hand of native Android
-                Development but{" "}
+                I understand that web development isn't everything that there is
+                in Application Development today, and so I try to keep learning
+                new things on the side. I never got the hang of native Android
+                Development when I tried to work with Kotlin, but{" "}
                 <strong>
                     {" "}
                     <a
@@ -611,7 +611,7 @@ const OtherThingsSection = () => {
                     </a>
                 </strong>{" "}
                 definitely attracted me, and I can call myself a beginner with
-                it. Given by appreciation for React,{" "}
+                it. Given my appreciation for React,{" "}
                 <strong>
                     {" "}
                     <a
@@ -622,16 +622,16 @@ const OtherThingsSection = () => {
                         React Native
                     </a>
                 </strong>{" "}
-                also does appear promising.
+                also appears promising.
             </p>
             <p>
                 I also like to do some competitive programming with{" "}
-                <strong>C++</strong>, although I'm not too good. But I practice,
-                so I'll get better, no worries.
+                <strong>C++</strong> in my free time, although I'm not the best.
+                But I practice when I can, so I'll get better, no worries.
             </p>
             <p>
-                Then there are also Machine Learning and Deep Learning changing
-                the world today. I've actually worked a bit with{" "}
+                I'm also aware of how Machine Learning and Deep Learning are
+                changing the world today. I've worked a bit with{" "}
                 <strong>
                     {" "}
                     <a
@@ -674,9 +674,9 @@ const AboutMeSection = ({ contactRef }) => {
                 <a href="https://www.goodreads.com/user/show/21277948-dakshraj-sharma">
                     (<strong>my Goodreads account, if you're curious</strong>)
                 </a>
-                . I'm also a lover of beautiful music irrespective of Genre,
-                listening to and loving music from <strong>Radiohead</strong>,{" "}
-                <strong>Arctic Monkeys</strong>, and{" "}
+                . I'm also a 'connoisseur' of beautiful music irrespective of
+                genre, listening to and loving music from{" "}
+                <strong>Radiohead</strong>, <strong>Arctic Monkeys</strong>, and{" "}
                 <strong>Nothing But Thieves</strong>, among endless others. My
                 favorite song, in case you wanted to know, is{" "}
                 <strong>
