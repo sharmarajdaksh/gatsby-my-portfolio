@@ -43,30 +43,32 @@ const Blog = () => {
     return (
         <Layout>
             <Head title="Blog" />
-            <ul>
-                {q.allMarkdownRemark.edges
-                    .sort(
-                        (a, b) =>
-                            parseFloat(a.node.frontmatter.index) -
-                            parseFloat(b.node.frontmatter.index)
-                    )
-                    .map(edge => (
-                        <Link
-                            to={"/blog/" + edge.node.fields.slug}
-                            key={edge.node.frontmatter.index}
-                        >
-                            <li>
-                                <BlogListItem
-                                    blog={edge.node.frontmatter}
-                                    timeToRead={edge.node.timeToRead}
-                                />
-                            </li>
-                        </Link>
-                    ))}
-            </ul>
-            {q.allMarkdownRemark.edges.length > 5 ? (
-                <div style={{ height: "5rem" }}></div>
-            ) : null}
+            <div className={blogListItemStyles.bloglist}>
+                <ul>
+                    {q.allMarkdownRemark.edges
+                        .sort(
+                            (a, b) =>
+                                parseFloat(a.node.frontmatter.index) -
+                                parseFloat(b.node.frontmatter.index)
+                        )
+                        .map(edge => (
+                            <Link
+                                to={"/blog/" + edge.node.fields.slug}
+                                key={edge.node.frontmatter.index}
+                            >
+                                <li>
+                                    <BlogListItem
+                                        blog={edge.node.frontmatter}
+                                        timeToRead={edge.node.timeToRead}
+                                    />
+                                </li>
+                            </Link>
+                        ))}
+                </ul>
+                {q.allMarkdownRemark.edges.length > 5 ? (
+                    <div style={{ height: "5rem" }}></div>
+                ) : null}
+            </div>
         </Layout>
     )
 }

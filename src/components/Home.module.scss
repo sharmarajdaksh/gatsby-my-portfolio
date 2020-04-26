@@ -24,6 +24,18 @@
             font-style: italic;
         }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+                color: #444;
+            }
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
         h2 {
             font-size: 1.75rem;
             font-weight: 300;
@@ -59,7 +71,7 @@
             -o-transition: all 0.5s;
             border: 2px #333 solid;
             outline: none;
-            align-self: baseline; 
+            align-self: baseline;
             &:hover,
             &:active {
                 background-color: #333;
@@ -125,9 +137,14 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-bottom: 2rem;
+        &:last-of-type {
+            margin-bottom: none;
+        }
         img {
-            width: 25%;
+            max-width: 30%;
             display: block;
+            max-height: 6rem;
         }
     }
 }
