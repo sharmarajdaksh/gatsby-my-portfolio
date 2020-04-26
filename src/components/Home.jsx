@@ -1,4 +1,12 @@
 import React, { useRef } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+    faGithub,
+    faLinkedin,
+    faFreeCodeCamp,
+    faDev,
+} from "@fortawesome/free-brands-svg-icons"
+import { faAt } from "@fortawesome/free-solid-svg-icons"
 
 import Head from "../shared/Head"
 import homeStyles from "./Home.module.scss"
@@ -645,8 +653,10 @@ const OtherThingsSection = () => {
                         fast.ai
                     </a>
                 </strong>{" "}
-                using Python, including a project for controlling video playback in a browser using web (Yup, it was pretty cool). The possibilities with ML and DL are endless, and
-                I want to soon try out integrating them into webapps.
+                using Python, including a project for controlling video playback
+                in a browser using web (Yup, it was pretty cool). The
+                possibilities with ML and DL are endless, and I want to soon try
+                out integrating them into webapps.
             </p>
         </section>
     )
@@ -659,207 +669,45 @@ const AboutMeSection = ({ contactRef }) => {
             <div className={homeStyles.hr}></div>
 
             <p>
-                By complete chance, I landed in a <strong>DevOps</strong>{" "}
-                internship which introduced my to things I had never been aware
-                of. As a result, I can now claim complete comfort working in the
-                command line with{" "}
+                I'm <strong>Dakshraj Sharma</strong>, a 21-year-old fullstack
+                developer from India. When I'm not developing, I like to read{" "}
+                <a href="https://www.goodreads.com/user/show/21277948-dakshraj-sharma">
+                    (<strong>my Goodreads account, if you're curious</strong>)
+                </a>
+                . I'm also a lover of beautiful music irrespective of Genre,
+                listening to and loving music from <strong>Radiohead</strong>,{" "}
+                <strong>Arctic Monkeys</strong>, and{" "}
+                <strong>Nothing But Thieves</strong>, among endless others. My
+                favorite song, in case you wanted to know, is{" "}
                 <strong>
-                    {" "}
-                    <a
-                        href="https://www.linux.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Linux
-                    </a>
-                </strong>
-                ,{" "}
-                <strong>
-                    {" "}
-                    <a
-                        href="https://git-scm.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Git
-                    </a>
-                </strong>
-                intermediate system and database administration, as well as
-                setting up complete working servers on{" "}
-                <strong>
-                    {" "}
-                    <a
-                        href="https://aws.amazon.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        AWS
-                    </a>
-                </strong>{" "}
-                using{" "}
-                <strong>
-                    {" "}
-                    <a
-                        href="https://httpd.apache.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Apache
-                    </a>
-                </strong>
-                ,{" "}
-                <strong>
-                    {" "}
-                    <a
-                        href="https://www.nginx.com/welcome-to-nginx/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Nginx
-                    </a>
-                </strong>
-                , and{" "}
-                <strong>
-                    {" "}
-                    <a
-                        href="https://www.haproxy.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        HAProxy
-                    </a>
-                </strong>
-                .
-            </p>
-            <div>
-                <img
-                    src={devopsSVG}
-                    className={homeStyles.landing__svg}
-                    alt="DevOps"
-                />
-            </div>
-            <p>
-                I also got to learn about CI/CD methodologies and working with
-                tools like{" "}
-                <strong>
-                    <a
-                        href="https://www.jenkins.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Jenkins
+                    <a href="https://www.youtube.com/watch?v=TNRCvG9YtYI">
+                        Weird Fishes / Arpeggi
                     </a>
                 </strong>
                 {", "}
-                <strong>
-                    <a
-                        href="https://nodejs.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Terraform
-                    </a>
-                </strong>
-                {", "}and monitoring tools like{" "}
-                <strong>
-                    <a
-                        href="https://www.nagios.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Nagios
-                    </a>
-                </strong>
-                . I also have worked with{" "}
-                <strong>
-                    <a
-                        href="https://travis-ci.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Travis CI
-                    </a>
-                </strong>
-                . In fact, this pages uses Travis CI for automated deployments
-                on code push to its remote repository on Github.
+                which I hold is the best song to ever have been created.
             </p>
-            <div className={homeStyles.skillSVGs}>
-                <div className={homeStyles.row}>
-                    <img
-                        src={awsSVG}
-                        className={homeStyles.tech__svg}
-                        alt="AWS"
-                    />
-                    <img
-                        src={gitSVG}
-                        className={homeStyles.tech__svg}
-                        alt="Git"
-                    />
-                    <img
-                        src={terraformSVG}
-                        className={homeStyles.tech__svg}
-                        alt="Terraform"
-                    />
-                </div>
-                <div className={homeStyles.row}>
-                    <img
-                        src={apacheSVG}
-                        className={homeStyles.tech__svg}
-                        alt="Apache HTTP Server"
-                    />
-                    <img
-                        src={nginxSVG}
-                        className={homeStyles.tech__svg}
-                        alt="Nginx"
-                    />
-                </div>
-                <div className={homeStyles.row}>
-                    <img
-                        src={travisSVG}
-                        className={homeStyles.tech__svg}
-                        alt="Travis CI"
-                    />
-
-                    <img
-                        src={jenkinsSVG}
-                        className={homeStyles.tech__svg}
-                        alt="Jenkins"
-                    />
-                </div>
-            </div>
             <p>
-                You won't be lying to say that I have barely scraped the surface
-                as far as DevOps goes, and I can't say you're wrong. But I
-                believe I have gained a firm grasp over concepts which
-                developers tend to often be completely unaware of and have now a
-                firm foundation in the field to build upon. At least, I know
-                enough to be able to launch a fullstack application completely
-                by myself. Among other things I want to try out{" "}
-                <strong>
-                    {" "}
-                    <a
-                        href="https://circleci.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        CircleCI
-                    </a>
-                </strong>
-                {", "}
-                which I haven't been able to try out yet. Also I want to achieve
-                basic working knowledge of the{" "}
-                <strong>
-                    {" "}
-                    <a
-                        href="https://cloud.google.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Google Cloud Platform
-                    </a>
-                </strong>
-                , it being the most popular alternative to AWS.
+                You probably didn't want to know all that, so let's get in
+                touch! Here are all the ways you can contact me or learn more.
             </p>
+            <div className={homeStyles.contactIcons}>
+                <a href="https://github.com/sharmarajdaksh">
+                    <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="https://www.linkedin.com/in/sharmarajdaksh/">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a href="https://www.freecodecamp.org/sharmarajdaksh">
+                    <FontAwesomeIcon icon={faFreeCodeCamp} />
+                </a>
+                <a href="https://dev.to/sharmarajdaksh">
+                    <FontAwesomeIcon icon={faDev} />
+                </a>
+                <a href="mailto:sharmarajdaksh@gmail.com">
+                    <FontAwesomeIcon icon={faAt} />
+                </a>
+            </div>
         </section>
     )
 }

@@ -6,7 +6,7 @@ export default () => {
     return (
         <div className={footerStyles.footer}>
             Created by Dakshraj Sharma with Gatsby and{" "}
-            <span role="img" aria-label="love">❤️</span>.
+            <span role="img" aria-label="love">❤️</span>, and hosted on Github Pages with Travis CI.
         </div>
     )
 }

@@ -152,3 +152,17 @@
 .backend {
     background-color: transparent;
 }
+
+.contactIcons {
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    a {
+        color: inherit;
+        &:hover {
+            color: #555;
+        }
+    }
+}
