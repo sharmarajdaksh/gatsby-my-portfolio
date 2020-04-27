@@ -631,8 +631,8 @@ const OtherThingsSection = () => {
                         Flutter
                     </a>
                 </strong>{" "}
-                definitely attracted me, and I can call myself a beginner with
-                it. Given my appreciation for React,{" "}
+                definitely attracted me, and I am trying to learn it for mobile
+                development. Given my appreciation for React,{" "}
                 <strong>
                     {" "}
                     <a
