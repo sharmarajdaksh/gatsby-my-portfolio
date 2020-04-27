@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout/Layout"
 import blogPostStyles from "./BlogPost.module.scss"
 
@@ -37,6 +37,10 @@ const BlogPost = props => {
                 ></div>
                 <div className={blogPostStyles.article__divider}></div>
             </article>
+            <div className={blogPostStyles.linksAside}>
+                <Link to="/blog">{"< More blogposts />"}</Link>
+                <Link to="/">{"< About Me />"}</Link>
+            </div>
         </Layout>
     )
 }

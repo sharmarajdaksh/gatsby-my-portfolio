@@ -23,6 +23,19 @@ html {
 
 @media (max-height: 570px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1023px) and (min-height: 769px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 1359px) {
+    html {
+        font-size: 21px;
     }
 }

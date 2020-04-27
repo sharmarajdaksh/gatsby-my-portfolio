@@ -93,8 +93,29 @@
     }
 }
 
+.linksAside {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        font-weight: bold;
+        color: inherit;
+    }
+    
+}
+
 @media(min-width: 767px) {
     .article {
         padding: 0 15%;
+    }
+    .linksAside {
+        padding: 1rem 25%;
+    }
+}
+
+@media (min-width: 1023px) {
+    .article {
+        padding: 0 20%;
     }
 }

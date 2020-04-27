@@ -6,7 +6,7 @@
 
 .landing {
     padding: 1rem;
-    height: calc(100vh - 2.86rem - 32px);
+    height: calc(100vh - 5rem);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -48,10 +48,11 @@
         }
 
         .button,
-        .landing__content__resumebutton:visited,
-        .landing__content__resumebutton:active {
+        .button:visited,
+        .button:active {
             cursor: pointer;
             background-color: black;
+            display: inline-block;
             font-size: 1rem;
             font-weight: bolder;
             color: white;
@@ -75,6 +76,9 @@
             &:hover,
             &:active {
                 background-color: #333;
+            }
+            &:first-of-type {
+                margin-bottom: 1rem;
             }
         }
 
@@ -167,11 +171,120 @@
     }
 }
 
-@media(min-width: 767px) {
+@media (min-width: 767px) {
     .landing {
         padding: 1rem 15%;
     }
     .frontend {
         padding: 2rem 15%;
+    }
+}
+
+@media (min-width: 1023px) {
+    .landing {
+        padding: 1rem 25%;
+    }
+    .frontend {
+        padding: 2rem 25%;
+    }
+}
+
+@media (min-width: 1023px) and (min-height: 767px) {
+    .landing {
+        display: grid;
+        padding: 1rem 15%;
+        grid-template-columns: 50% 50%;
+        grid-gap: 2rem;
+
+        .landing__content {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: left;
+
+            &:nth-of-type(2) {
+                text-align: right;
+
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .landing__greeting {
+            grid-column: 2;
+        }
+    }
+
+    .frontend {
+        padding: 4rem 15%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 0 2rem;
+        h3 {
+            text-align: right;
+        }
+        .hr {
+            width: 100%;
+        }
+        p:nth-child(1) {
+            margin-top: 1rem;
+        }
+        .frontend__intro {
+            grid-column: 2;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    }
+
+    p.aboutme {
+        margin-top: 0 !important;
+    }
+
+    .backend {
+        grid-template-columns: 70% 30%;
+        grid-template-areas: 100%;
+        h3 {
+            text-align: left;
+        }
+        h3,
+        .hr,
+        .landing__svg {
+            grid-column: 2;
+        }
+
+        p.landing__svg {
+            margin-top: 0;
+        }
+
+        .frontend__intro {
+            grid-column: 1;
+            grid-row: 1;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .backend__contentdiv {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .backend__heading {
+            grid-column: 2;
+        }
+    }
+
+    .skillSVGs {
+        .row {
+            img {
+                max-width: 25%;
+                display: block;
+                max-height: 5rem;
+                &[alt="Django"] {
+                    
+                    max-height: 3.5rem;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
     }
 }

@@ -5,8 +5,14 @@
     padding: 1rem;
 }
 
-@media(min-width: 767px) {
+@media (min-width: 767px) {
     .footer {
         padding: 1rem 15%;
+    }
+}
+
+@media (min-width: 1023px) {
+    .footer {
+        padding: 1rem 25%;
     }
 }

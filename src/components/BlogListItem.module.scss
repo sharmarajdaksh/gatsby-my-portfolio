@@ -36,8 +36,14 @@
     border-bottom: 1px #eee solid;
 }
 
-@media(min-width: 767px) {
+@media (min-width: 767px) {
     .bloglist {
         padding: 1rem 15%;
+    }
+}
+
+@media (min-width: 1023px) {
+    .bloglist {
+        padding: 1rem 20%;
     }
 }
