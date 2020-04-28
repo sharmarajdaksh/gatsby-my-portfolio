@@ -9,16 +9,16 @@
 }
 
 .backtotop {
-    font-size: 2rem;
+    font-size: 3rem;
     position: fixed;
-    bottom: 1rem;
+    bottom: 3rem;
     right: 1rem;
     color: #333;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
     a {
         color: inherit;
     }

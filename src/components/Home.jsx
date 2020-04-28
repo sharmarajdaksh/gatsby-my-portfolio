@@ -41,8 +41,8 @@ export default () => {
                     <div className={homeStyles.landing__content}>
                         <h2>
                             Hi there! I'm <br />
-                            <span>Dakshraj Sharma </span> <br />I do fullstack
-                            web development
+                            <span>Dakshraj Sharma </span> <br />
+                            Developer | Engineer
                         </h2>
                     </div>
                     <div>
@@ -75,16 +75,15 @@ export default () => {
                         >
                             Get in touch
                         </a>
-                        <a
-                            href={resumePDF}
+                        <Link
+                            to="blog"
                             className={[
-                                homeStyles.landing__content__resumebutton,
                                 homeStyles.button,
+                                homeStyles.landing__content__resumebutton,
                             ].join(" ")}
-                            download="Dakshraj Sharma"
                         >
-                            My Resume
-                        </a>
+                            My blog
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -640,7 +639,10 @@ const AboutMeSection = ({ contactRef }) => {
                 <p>
                     You probably didn't want to know all that, so let's get in
                     touch! Here are all the ways you can contact me or learn
-                    more.
+                    more about me. You can also{" "}
+                    <a href={resumePDF} download="Dakshraj Sharma">
+                        <strong>click here to download my resume.</strong>
+                    </a>
                 </p>
                 <div className={homeStyles.contactIcons}>
                     <a href="https://github.com/sharmarajdaksh">

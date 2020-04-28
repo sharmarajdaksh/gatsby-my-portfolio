@@ -19,30 +19,30 @@ export default ({ children }) => {
         })
     }
 
-    let observer
-
     const [showBackToTop, setShowBackToTop] = useState(false)
 
     const headerRef = useRef(null)
 
-    const headerIntersection = header => {
-        observer = new IntersectionObserver((entry, self) => {
-            if (entry[0].isIntersecting) {
-                setShowBackToTop(false)
-            } else {
-                setShowBackToTop(true)
-            }
-        })
-        observer.observe(header)
-    }
-
     useEffect(() => {
-        headerIntersection(headerRef.current)
-    })
+        let observer
+        let hrf = headerRef.current
+        const headerIntersection = header => {
+            observer = new IntersectionObserver((entry, self) => {
+                if (entry[0].isIntersecting) {
+                    setShowBackToTop(false)
+                } else {
+                    setShowBackToTop(true)
+                }
+            })
+            observer.observe(header)
+        }
 
-    useEffect(() => {
-        return observer.unobserve(headerRef.current)
-    })
+        headerIntersection(hrf)
+
+        return () => {
+            observer.unobserve(hrf)
+        }
+    }, [])
 
     return (
         <div className={layoutStyles.layout}>

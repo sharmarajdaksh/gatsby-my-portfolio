@@ -64,7 +64,7 @@ export default () => {
             </div>
             <div className={headerStyles.header__div}>
                 <p>
-                    <Link to="/projects">/projects</Link>
+                    <a href="https://github.com/sharmarajdaksh?tab=repositories">/projects</a>
                 </p>
                 <p>
                     <Link to="/blog">/blog</Link>
