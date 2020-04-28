@@ -14,21 +14,9 @@ import developerOnDeskSVG from "../assets/svg/coder_on_desk.svg"
 import frontendSVG from "../assets/svg/frontend_development.svg"
 import backendSVG from "../assets/svg/backend_development.svg"
 import devopsSVG from "../assets/svg/devops_server.svg"
-import reactSVG from "../assets/svg/react.svg"
-import angularSVG from "../assets/svg/angular.svg"
-import vueSVG from "../assets/svg/vue.svg"
-import djangoSVG from "../assets/svg/django.svg"
-import goSVG from "../assets/svg/go.svg"
-import nodeSVG from "../assets/svg/nodejs.svg"
-import mongoSVG from "../assets/svg/mongodb.svg"
-import mysqlSVG from "../assets/svg/mysql.svg"
-import apacheSVG from "../assets/svg/apache.svg"
-import nginxSVG from "../assets/svg/nginx.svg"
-import awsSVG from "../assets/svg/aws.svg"
-import terraformSVG from "../assets/svg/terraform.svg"
-import travisSVG from "../assets/svg/travis.svg"
-import jenkinsSVG from "../assets/svg/jenkins.svg"
-import gitSVG from "../assets/svg/git.svg"
+import feSVG from "../assets/svg/fe.svg"
+import beSVG from "../assets/svg/be.svg"
+import devopsSkillsSVG from "../assets/svg/devops.svg"
 import resumePDF from "../assets/pdf/webdev-resume.pdf"
 import Layout from "./layout/Layout"
 import { Link } from "gatsby"
@@ -59,7 +47,7 @@ export default () => {
                     </div>
                     <div>
                         <img
-                            src={developerOnDeskSVG}
+                            data-src={developerOnDeskSVG}
                             className={homeStyles.landing__svg}
                             alt="A developer on a desk"
                         />
@@ -124,7 +112,7 @@ const FrontendSection = ({ secref }) => {
             </p>
             <div>
                 <img
-                    src={frontendSVG}
+                    data-src={frontendSVG}
                     className={homeStyles.landing__svg}
                     alt="Frontend Development"
                 />
@@ -168,19 +156,9 @@ const FrontendSection = ({ secref }) => {
                 <div className={homeStyles.skillSVGs}>
                     <div className={homeStyles.row}>
                         <img
-                            src={reactSVG}
+                            data-src={feSVG}
                             className={homeStyles.tech__svg}
-                            alt="React"
-                        />
-                        <img
-                            src={angularSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Angular"
-                        />
-                        <img
-                            src={vueSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Vue"
+                            alt="Frontend Technologies"
                         />
                     </div>
                 </div>
@@ -255,7 +233,7 @@ const BackendSection = () => {
             </p>
             <div>
                 <img
-                    src={backendSVG}
+                    data-src={backendSVG}
                     className={homeStyles.landing__svg}
                     alt="Backend Development"
                 />
@@ -324,35 +302,13 @@ const BackendSection = () => {
                 <div className={homeStyles.skillSVGs}>
                     <div className={homeStyles.row}>
                         <img
-                            src={nodeSVG}
+                            data-src={beSVG}
                             className={homeStyles.tech__svg}
-                            alt="NodeJS"
-                        />
-                        <img
-                            src={goSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Go"
-                        />
-                        <img
-                            src={djangoSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Django"
-                        />
-                    </div>
-                    <div className={homeStyles.row}>
-                        <img
-                            src={mongoSVG}
-                            className={homeStyles.tech__svg}
-                            alt="MongoDB"
-                        />
-                        <img
-                            src={mysqlSVG}
-                            className={homeStyles.tech__svg}
-                            alt="MySQL"
+                            alt="Backend Development"
                         />
                     </div>
                 </div>
-                <p>
+                <p className={homeStyles.these_days}>
                     These days I have been hooked on learning microservices
                     architectures and how large companies like Netflix and
                     Spotify are changing the way backends are creaated with
@@ -471,7 +427,7 @@ const DevOpsSection = () => {
             </p>
             <div>
                 <img
-                    src={devopsSVG}
+                    data-src={devopsSVG}
                     className={homeStyles.landing__svg}
                     alt="DevOps"
                 />
@@ -525,45 +481,10 @@ const DevOpsSection = () => {
                 <div className={homeStyles.skillSVGs}>
                     <div className={homeStyles.row}>
                         <img
-                            src={awsSVG}
+                            data-src={devopsSkillsSVG}
                             className={homeStyles.tech__svg}
-                            alt="AWS"
-                        />
-                        <img
-                            src={gitSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Git"
-                        />
-                        <img
-                            src={terraformSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Terraform"
-                        />
-                    </div>
-                    <div className={homeStyles.row}>
-                        <img
-                            src={apacheSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Apache HTTP Server"
-                        />
-                        <img
-                            src={nginxSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Nginx"
-                        />
-                    </div>
-                    <div className={homeStyles.row}>
-                        <img
-                            src={travisSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Travis CI"
-                        />
-
-                        <img
-                            src={jenkinsSVG}
-                            className={homeStyles.tech__svg}
-                            alt="Jenkins"
-                        />
+                            alt="DevOps"
+                        />{" "}
                     </div>
                 </div>
                 <p>

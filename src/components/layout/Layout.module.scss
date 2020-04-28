@@ -4,11 +4,27 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    animation: fadein 0.5s;
-    -webkit-animation: fadein 0.5s;
+    // animation: fadein 0.5s;
+    // -webkit-animation: fadein 0.5s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.backtotop {
+    font-size: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: #333;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    a {
+        color: inherit;
+    }
 }
+
+// @keyframes fadein {
+//     from { opacity: 0; }
+//     to   { opacity: 1; }
+// }
