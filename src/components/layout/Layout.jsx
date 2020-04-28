@@ -19,12 +19,14 @@ export default ({ children }) => {
         })
     }
 
+    let observer
+
     const [showBackToTop, setShowBackToTop] = useState(false)
 
     const headerRef = useRef(null)
 
     const headerIntersection = header => {
-        let observer = new IntersectionObserver((entry, self) => {
+        observer = new IntersectionObserver((entry, self) => {
             if (entry[0].isIntersecting) {
                 setShowBackToTop(false)
             } else {
@@ -36,7 +38,11 @@ export default ({ children }) => {
 
     useEffect(() => {
         headerIntersection(headerRef.current)
-    }, [])
+    })
+
+    useEffect(() => {
+        return observer.unobserve(headerRef.current)
+    })
 
     return (
         <div className={layoutStyles.layout}>
