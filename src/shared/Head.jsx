@@ -16,6 +16,7 @@ export default ({ title }) => {
 
     return (
         <Helmet>
+            <title>{`${title} | ${q.site.siteMetadata.title}`}</title>
             <meta
                 name="title"
                 content={`${title} | ${q.site.siteMetadata.title}`}
