@@ -17,6 +17,11 @@ export default ({ title }) => {
     return (
         <Helmet>
             <title>{`${title} | ${q.site.siteMetadata.title}`}</title>
+            <meta charset="utf-8" />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
             <meta
                 name="title"
                 content={`${title} | ${q.site.siteMetadata.title}`}
@@ -58,6 +63,7 @@ export default ({ title }) => {
                 property="twitter:image"
                 content="https://sharmarajdaksh.xyz/coder_on_desk.svg"
             />
+            <meta property="og:locale" content="en_US" />
         </Helmet>
     )
 }
