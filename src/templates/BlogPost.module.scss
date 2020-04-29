@@ -113,8 +113,14 @@
     }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
     .article {
-        padding: 0 20%;
+        padding: 0 25%;
+    }
+}
+
+@media (min-width: 1420px) {
+    .article {
+        padding: 0 30%;
     }
 }
