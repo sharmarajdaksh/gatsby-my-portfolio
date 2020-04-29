@@ -44,6 +44,9 @@ const Blog = () => {
         <Layout>
             <Head title="Blog" />
             <div className={blogListItemStyles.bloglist}>
+                <div>
+                    <h2>my blog</h2>
+                </div>
                 <ul>
                     {q.allMarkdownRemark.edges
                         .sort(

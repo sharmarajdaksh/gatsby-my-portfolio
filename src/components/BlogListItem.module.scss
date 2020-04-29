@@ -1,5 +1,16 @@
 .bloglist {
     padding: 1rem;
+
+    div {
+        border-bottom: 1px #eee solid;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
 }
 
 .bloglistitem {

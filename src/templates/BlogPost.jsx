@@ -4,7 +4,7 @@ import Layout from "../components/layout/Layout"
 import blogPostStyles from "./BlogPost.module.scss"
 
 export const q = graphql`
-    query($slug: String!) {
+    query($slug: Date!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
             html
             frontmatter {

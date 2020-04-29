@@ -27,10 +27,15 @@ export default () => {
 
     const scrollDown = (e, ref) => {
         e.preventDefault()
-        ref.current.scrollIntoView({
+        const y = ref.current.getBoundingClientRect().top + window.scrollY
+        window.scroll({
+            top: y,
             behavior: "smooth",
-            block: "start",
         })
+        // ref.current.scrollIntoView({
+        //     behavior: "smooth",
+        //     block: "start",
+        // })
     }
 
     return (
