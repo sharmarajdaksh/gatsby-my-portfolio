@@ -302,16 +302,16 @@ RABBITMQ_QUEUE: messages
 <pre><code class="language-javascript">const amqp = require('amqplib');
 </code></pre>
 <p>We then store the environment variables as local <code>const</code> values. Using the host, username, and password variables, we also form the connection string using Javascript template strings and store it as <code>RABBITMQ_CONNECTION_STRING</code>.</p>
-<pre><code class="language-javascript"># Host address
+<pre><code class="language-javascript">// Host address
 const RABBITMQ_HOST = process.env.RABBITMQ_HOST;
-# Username
+// Username
 const RABBITMQ_USER = process.env.RABBITMQ_USER;
-# Password
+// Password
 const RABBITMQ_PASS = process.env.RABBITMQ_PASS;
-# Connection string: ampq://username:password@host
+// Connection string: ampq://username:password@host
 const RABBITMQ_CONNECTION_STRING = `amqp://${RABBITMQ_USER}:${RABBITMQ_PASS}@${RABBITMQ_HOST}/`;
 
-# The name of the queue we will connect to
+// The name of the queue we will connect to
 const RABBITMQ_QUEUE = process.env.RABBITMQ_QUEUE;
 </code></pre>
 <p>You might be confused as to why we need to have a queue name value when we already have the host defined. This is because a single RabbitMQ can have many queues, independent of each other. Each of these queues is identified by a string identifier, which we have declared as an environment variable for the current application.</p>
