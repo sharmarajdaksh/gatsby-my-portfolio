@@ -1,6 +1,7 @@
 .article {
     margin-top: 2rem;
     padding: 0 1rem;
+    line-height: 1.5;
 
     .article__frontmatter {
         p {
@@ -11,7 +12,6 @@
         h1 {
             font-size: 2rem;
             font-weight: 700;
-            line-height: 1.5;
         }
 
         h2 {
@@ -24,7 +24,7 @@
         text-align: justify;
         color: #111;
 
-        line-height: 1.25;
+        line-height: 1.5;
 
         h2 {
             font-size: 1.25rem;
@@ -50,13 +50,19 @@
         em {
             font-style: italic;
         }
+        ul {
+            list-style-type: disc;
+            ul {
+                list-style-type: circle;
+                margin-left: 2rem;
+            }
+        }
         code {
             display: block;
             font-family: "Courier New", Courier, monospace;
             font-size: 0.75rem;
             font-weight: 200;
             line-height: 1;
-            margin: 1rem 0;
             text-align: left;
             background-color: #ddd;
             padding-left: 1rem;
