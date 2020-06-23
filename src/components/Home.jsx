@@ -5,6 +5,7 @@ import {
     faLinkedin,
     faFreeCodeCamp,
     faDev,
+    faMedium
 } from "@fortawesome/free-brands-svg-icons"
 import { faAt } from "@fortawesome/free-solid-svg-icons"
 
@@ -17,7 +18,7 @@ import devopsSVG from "../assets/svg/devops_server.svg"
 import feSVG from "../assets/svg/fe.svg"
 import beSVG from "../assets/svg/be.svg"
 import devopsSkillsSVG from "../assets/svg/devops.svg"
-import resumePDF from "../assets/pdf/webdev-resume.pdf"
+// import resumePDF from "../assets/pdf/webdev-resume.pdf"
 import Layout from "./layout/Layout"
 import { Link } from "gatsby"
 
@@ -645,8 +646,11 @@ const AboutMeSection = ({ contactRef }) => {
                     You probably didn't want to know all that, so let's get in
                     touch! Here are all the ways you can contact me or learn
                     more about me. You can also{" "}
-                    <a href={resumePDF} download="Dakshraj Sharma">
+                    {/* <a href={resumePDF} download="Dakshraj Sharma">
                         <strong>click here to download my resume.</strong>
+                    </a> */}
+                    <a href="https://docs.google.com/document/d/1GZ0ArGjTL8hBwkm-H_iRRx6pge5Z6GxIKlL22Hi1bbM/edit?usp=sharing" download="Dakshraj Sharma">
+                        <strong>click here to view my resume.</strong>
                     </a>
                 </p>
                 <div className={homeStyles.contactIcons}>
@@ -655,6 +659,9 @@ const AboutMeSection = ({ contactRef }) => {
                     </a>
                     <a href="https://www.linkedin.com/in/sharmarajdaksh/">
                         <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                    <a href="https://medium.com/@sharmarajdaksh">
+                        <FontAwesomeIcon icon={faMedium} />
                     </a>
                     <a href="https://www.freecodecamp.org/sharmarajdaksh">
                         <FontAwesomeIcon icon={faFreeCodeCamp} />
