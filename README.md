@@ -1,3 +1,3 @@
 # gatsby-my-portfolio
 
-A portfolio and blog website I'm developing for myself with Gatsby.
+A portfolio and blog website I developed for myself with Gatsby. 
