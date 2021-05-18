@@ -3,6 +3,7 @@ module.exports = {
         title: "Dakshraj Sharma",
         Author: "Dakshraj Sharma",
     },
+    pathPrefix: "https://sharmarajdaksh.github.io/v1.sharmarajdaksh.github.io/",
     plugins: [
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
